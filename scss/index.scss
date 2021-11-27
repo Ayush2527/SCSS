@@ -1,0 +1,31 @@
+@import "values";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    h1{
+        font-size: 3rem;
+        font-weight: bolder;
+        &::before{
+           @include properties;
+            left: 36rem;
+            top: 3.5rem;
+        }
+        &::after{
+            @include properties;
+            left: 88rem;
+            top: 3.5rem; 
+        }
+    }
+ 
+}

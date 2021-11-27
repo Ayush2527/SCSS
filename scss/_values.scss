@@ -1,0 +1,10 @@
+@mixin properties{
+    content: "";
+    background-color: $color;
+    width: 27rem;
+    height: 0.4rem;
+    margin: 1rem;
+    position: absolute;
+}
+
+$color:gray;
