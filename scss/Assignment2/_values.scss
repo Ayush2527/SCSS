@@ -1,0 +1,19 @@
+@mixin div-values($bgcolor, $padding){
+    background-color: $bgcolor;
+    padding:$padding;
+}
+
+@mixin buttonProp($btncolor) {
+    background-color: $btncolor;
+    border-radius: .5rem;
+    padding: .5rem 2.5rem;
+}
+
+@mixin textprop {
+    h1{
+        color:$title-color;
+    }
+    p{
+        color: $par-color;
+    }
+}

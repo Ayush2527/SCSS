@@ -1,0 +1,86 @@
+@import 'bgcolor';
+@import 'btns';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    &__wrapper{
+        background-color: $blue;
+        display: flex;
+        justify-content: space-between;
+        .header__logo{
+            color: $white;
+            font-weight: bold;
+            padding: 1rem;
+        }
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                padding:1rem;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
+                #button{
+                    padding: .5rem 2rem;
+                    border: none;
+                    border-radius: .5rem;
+                    background-color: $white;
+                    color: $blue;
+                }
+            }
+        }
+        
+    }
+}
+
+.banner{
+    .container{
+        background-color: rgb(226, 226, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .banner__content{
+            margin: 5rem;
+            height: 30vh auto;
+            width: 60vh ;
+            background-color:$blue;
+            color: $white;
+            text-align: center;
+            padding: 2rem;
+
+            .btn{
+                @include btns(blue);
+            }
+        }
+    }
+}
+
+.section{
+    .section_wrap{
+       background-color: $grey;
+       height: 10vh;
+       .btn{
+          @include btns(white);
+           &--success{
+            background-color:$green;
+            }
+            &--alert{
+                background-color: $red;
+            }
+            &--primary{
+                background-color: $blue;
+            }
+            &--primary{
+                background-color: $blue;
+                text-decoration: none;
+            }
+       }
+       
+    }
+}

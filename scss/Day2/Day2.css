@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__wrapper {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__wrapper .header__logo {
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.header__wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__wrapper ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.header__wrapper ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__wrapper ul li #button {
+  padding: .5rem 2rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: white;
+  color: blue;
+}
+
+.banner .container {
+  background-color: #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .container .banner__content {
+  margin: 5rem;
+  height: 30vh auto;
+  width: 60vh;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.banner .container .banner__content .btn {
+  margin: 1.3rem .2rem;
+  padding: .3rem .6rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.section .section_wrap {
+  background-color: #4b4444;
+  height: 10vh;
+}
+
+.section .section_wrap .btn {
+  margin: 1.3rem .2rem;
+  padding: .3rem .6rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.section .section_wrap .btn--success {
+  background-color: green;
+}
+
+.section .section_wrap .btn--alert {
+  background-color: red;
+}
+
+.section .section_wrap .btn--primary {
+  background-color: blue;
+}
+
+.section .section_wrap .btn--primary {
+  background-color: blue;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Day2.css.map */

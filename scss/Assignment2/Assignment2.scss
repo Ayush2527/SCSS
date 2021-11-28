@@ -1,0 +1,71 @@
+@import './values';
+@import './variable';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+main{
+    width: 30%;
+    margin: 4rem auto;
+    padding: 0rem 1rem 1rem;
+    background-color:  #EBEBFF;
+    display:grid;
+    grid-template-rows: 50px  200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1.2rem;
+    grid-auto-rows: 5rem;
+
+    .header{
+        grid-column: 1/-1;
+    }
+    .div1{
+        @include div-values(white, 0.5rem);
+        @include textprop;
+    }
+    .div2{
+       @include div-values(white, 0.5rem);
+        .greenButton{
+           @include buttonProp(#03BB2C);
+           margin-top: 1rem; 
+       }
+       &--button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       @include textprop;
+    }
+    .div3{
+        @include div-values(white, 0.5rem);
+        h1{
+            color:$title-color;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 80%;
+        }
+    }
+    .div4{
+        @include div-values(white, 0.5rem);
+        grid-row: 3/5;
+        grid-column: 2/3;
+        @include textprop;
+    }
+    .div5__button{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .blueButton{
+            @include buttonProp(#0316BB)
+        }
+    }
+}

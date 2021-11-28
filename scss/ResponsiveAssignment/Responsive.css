@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 3rem;
+}
+
+.parent .child {
+  background-color: #f1f1f1;
+  padding: 10px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  color: black;
+}
+
+.parent .child a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.parent .child .black {
+  color: black;
+  font-weight: bold;
+}
+
+.parent .child1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  color: goldenrod;
+}
+
+@media (max-width: 800px) {
+  .parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Responsive.css.map */

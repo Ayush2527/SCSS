@@ -1,0 +1,7 @@
+@mixin btns ($color){
+    margin: 1.3rem .2rem;
+    padding: .3rem .6rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    color: $color
+}

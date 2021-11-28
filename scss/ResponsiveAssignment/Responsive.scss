@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+html{
+  font-size: 62.5%;
+}
+@mixin childProp($color) {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  color:$color ; 
+}
+
+
+  .parent {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    .child{
+      @include childProp(black);
+      a{
+        text-decoration: none;
+        color: goldenrod;
+      } 
+      .black{
+        color:black;
+        font-weight: bold;
+      }
+    }
+    .child1{
+      @include childProp(goldenrod);
+    }
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+  }
+  
+ 
